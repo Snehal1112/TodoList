@@ -3,6 +3,12 @@ body {
   padding: 30px;
 }
 
+@media screen and (max-width: 766px) {
+  /* line 2, ../scss/modules/_blocks.scss */
+  .navigation-panel {
+    margin-top: 20px;
+  }
+}
 /* line 1, ../scss/modules/_components.scss */
 .container_panel {
   padding: 15px;
