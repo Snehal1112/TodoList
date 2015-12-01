@@ -11,8 +11,13 @@ body {
 }
 
 /* line 7, ../scss/modules/_components.scss */
-input {
+textarea, input {
   margin-bottom: 10px;
+}
+
+/* line 11, ../scss/modules/_components.scss */
+td, .panel-body-contains {
+  font-family: "Courier New";
 }
 
 /* line 1, ../scss/layouts/_header.scss */

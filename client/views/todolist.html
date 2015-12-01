@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <div class="container_panel box-shadow--4dp" ng-init = "getTasks()">
+        <h3>Welcome To My ToDo</h3>
+        <p> this is simpel todo list application</p>
+        <h3>My Latest Lists</h3>
+        <div class="table-responsive" >
+          <table class="table ">
+              <tr>
+                <th>List Name</th>
+                <th>Created On</th>
+                <th>Action</th>
+              </tr>
+              <tr ng-repeat = "task in tasks">
+                <td>{{task.task_name}}</td>
+                <td>{{task.create_date | date : 'MM/dd/yyyy  hh:m a'}}</td>
+                <td>
+                  <a href = "#/task/details/{{task._id}}">
+                    <i class="fa fa-pencil"></i>
+                  </a>
+                  <a href = "#/" ng-click = "removeTask(task._id)">
+                    <i class="fa fa-trash"></i>
+                  </a> 
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <div class="container_panel box-shadow--4dp" ng-init = "getTasks()">
+            <a href="#/task/addtask">Add task</a>
+        </div>
+    </div>
+</div>
