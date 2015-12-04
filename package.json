@@ -13,7 +13,8 @@
   		"bootstrap" : "*",
   		"angular" : "*",
   		"angular-route" : "*",
-  		"font-awesome" : "*"
+  		"font-awesome" : "*",
+		"ldapjs" : "*"
   },
   "author": "snehal",
   "license": "ISC"

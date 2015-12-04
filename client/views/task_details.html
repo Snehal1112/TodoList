@@ -4,6 +4,7 @@
 <div class="panel panel-default box-shadow--4dp" ng-init = "getTask()">
   <div class="panel-heading">
     <h3 class="panel-title">{{task.task_name}}</h3>
+    <span>{{task.create_date | date : 'MM/dd/yyyy  hh:m a'}}</span>
   </div>
   <div class="panel-body panel-body-contains">
       <pre>{{task.discription}}</pre>

@@ -10,17 +10,24 @@
                 <th>List Name</th>
                 <th>Created On</th>
                 <th>Action</th>
+                <th>Views</th>
               </tr>
               <tr ng-repeat = "task in tasks">
                 <td>{{task.task_name}}</td>
                 <td>{{task.create_date | date : 'MM/dd/yyyy  hh:m a'}}</td>
                 <td>
                   <a href = "#/task/details/{{task._id}}">
-                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-pencil fa-2x"></i>
                   </a>
+                  &nbsp;
                   <a href = "#/" ng-click = "removeTask(task._id)">
-                    <i class="fa fa-trash"></i>
+                    <i class="fa fa-trash fa-2x"></i>
                   </a> 
+                </td>
+                <td>
+                  <a href = "#/task/details/{{task._id}}">
+                    <i class="fa fa-list fa-2x"></i>
+                  </a>
                 </td>
               </tr>
           </table>
